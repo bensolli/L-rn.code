@@ -195,7 +195,8 @@ h2{
   font-family: interstate, sans-serif;
   font-weight: 700; 
   font-style: normal;
-  color: #B0B0B0;
+  /*color: #B0B0B0;*/
+  color: #FF5FAF;
 }
 
 h3{
@@ -214,11 +215,6 @@ footer .wrapper__menu__newsletter h3{
   margin-top: 0%;
 }
 
-
-.product__info--content h3{
-  color: #FF5FAF;
-  margin-bottom: -15px;
-}
 
 footer p{
   color: #B0B0B0;
@@ -675,7 +671,8 @@ footer hr {
 .product__info--content dt{
   padding-top: 20px;
   margin-left:0;
-  color: #FF5FAF;
+  /*color: #FF5FAF;*/
+  color: #7CFBFF;
   font-weight: 700;
 }
 
@@ -841,10 +838,16 @@ text-decoration: none;
 
 .background__color{
   margin-top: 220px;
-  background-color: #00032D;
+  background-color: #000227;
   z-index: 3;
   position: sticky;
   padding-bottom: 20px;
+}
+
+.backgrond-color__category__index{
+  margin-top: 50px;
+  background-color: #010431;
+  box-shadow:0px 0px 20px -12px rgba(0, 0, 0, 0.6);
 }
 
 
