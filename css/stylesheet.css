@@ -898,6 +898,30 @@ transform: scale(0.9);
   margin-right: 25%;
 }
 
+.about__text h2, .about__text p {
+  color: #002C39;
+}
+
+.instapic a img{
+  object-fit: cover;
+  min-width: 200px;
+  max-width:  200px;
+  min-height:  200px;
+  max-height: 200px;
+  transition: 0.2s;
+  padding: 5px;
+  border: 1px solid transparent;
+  
+}
+
+.instapic a img:hover{
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.instapic{
+ display: inline-block;
+}
 
 
 
@@ -964,7 +988,6 @@ transform: scale(0.9);
 
 .about__people__wrapper__open{
   border: 1px solid #7CFBFF;
-  transform: scale(1.2);
 }
 
 
@@ -975,6 +998,12 @@ transform: scale(0.9);
   background-color: #253049;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.about__dropdown:hover{
+  border: 1px solid #7CFBFF;
+  transition: 0.2s;
 }
 
 .backgrond-color__category__about__hvemervi{
