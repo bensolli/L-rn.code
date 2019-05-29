@@ -730,6 +730,7 @@ transform: scale(0.9);
 }
 
 
+
 @media only screen and (max-width: 900px) {
 
   .call-to-action__btn{
@@ -756,7 +757,7 @@ transform: scale(0.9);
 
 
 
-/*cards*/
+/*podkast cards*/
 .card__wrapper{
   min-width: 100%;
   min-height: 360px;
@@ -882,7 +883,217 @@ transform: scale(0.9);
 
 
 
+
+
+/*about*/
+
+.backgrond-color__category__about{
+  background-color: #f1f1f1;
+  padding-bottom: 80px;
+}
+
+.backgrond-color__category__about h2, .backgrond-color__category__about p {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+
+
+
+
+
+
+.about__card__wrapper{
+  min-width: 70%;
+  max-width: 70%;
+  min-height: 240px;
+  max-height: 240px;
+  background-color: #253049;
+  border-radius: 5px;
+  box-shadow:0px 0px 20px -12px rgba(0, 0, 0, 0.6);
+  transition: 0.2s;
+  border: 1px solid transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.about__card__wrapper:hover{
+ transform: scale(1.1);
+ transition: 0.2s;
+ border: 1px solid #7CFBFF;
+ box-shadow:0px 0px 20px -12px #7CFBFF;
+}
+
+.about__cards__img{
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about__card-text{
+  padding: 0px 0px 15px 0px;
+  margin-top:0;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.about__card-text h3{
+  color: white;
+}
+
+.about__card-text p{
+  color: #B0B0B0;
+}
+
+.pink__border__top{
+  padding-top:20px;
+  border-top: 1px solid #FF5FAF;
+}
+
+
+
+.about__people__content__open{
+  display: block;
+}
+
+.about__people__content__closed{
+  display: none;
+}
+
+.about__people__wrapper__open{
+  border: 1px solid #7CFBFF;
+  transform: scale(1.2);
+}
+
+
+
+
+.about__dropdown{
+  border-top: 2px solid #FF5FAF;
+  background-color: #253049;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.backgrond-color__category__about__hvemervi{
+  background-color: #010431;
+}
+
+.about__btn__txt{
+  float: left;
+  padding: 20px;
+  color: #f1f1f1;
+}
+
+.about__btn__arrow{
+  float: right;
+  padding: 20px;
+}
+
+.about__dropdown i{
+  color:#B0B0B0;
+}
+
+.about__dropdown__btn__content__open{
+  display: block;
+}
+
+.about__dropwdown__content__closed{
+  display: none;
+}
+
+.about__dropdown__btn__open{
+  border: 1px solid #7CFBFF;
+}
+
+.arrow__rotate{
+  transform: rotate(180deg);
+  transition: 0.5s;
+  color: #7CFBFF;
+}
+
+.graph__img{
+  min-width: 100%;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
  /*///////////////*/
+
+/*kontakt*/
+.kontakt-skjema h2{
+  margin-top: 4em;
+  color: rgb(167, 167, 167);
+}
+
+.inputboks{
+  padding: 10px;
+}
+
+.inputboks2{
+  padding: 10px;
+}
+
+
+.text-boks{
+  max-width: 100%;
+  height: 200px;
+}
+.kontakt-skjema .btn{
+  margin-top: 2em;
+  padding: 0.8em 4em 0.8em 4em;
+  border: 2px solid #FFB200;
+  background-color: white;
+  color: #FFB200;
+  text-decoration: none;
+}
+.kontakt-skjema .btn:hover{
+  transition: 0.5s;
+  background-color: #FFB200;
+  color: #002C39;
+}
+
+
+
+
+.display_name_error_message p{
+  display: block;
+  color: red;
+}
+.no_name_error_message{
+  display: none;
+}
+
+.display_epost_error_message p{
+  display: block;
+  color: red;
+}
+.no_epost_error_message{
+  display: none;
+}
+
+.display_textbox_error_message p{
+  display: block;
+  color: red;
+}
+.no_textbox_error_message{
+  display: none;
+}
+
+
+
+
+
+
 
 
 
@@ -973,6 +1184,57 @@ margin-top: 10px;
 .nythetContainer p{
   margin-bottom: 50px;
 }
+
+
+
+
+.background__color__hvit{
+  background-color: white;
+}
+
+
+
+/*blog main page*/
+
+.blog__main-page .RelNyheter{
+  background-color: #FFF1F1; 
+  max-width: 100%;
+  /*height: 15%;*/
+  margin: 100px 0 70px 0;
+
+}
+
+.blog__main-page .nythetContainer{
+margin-bottom: 50px;
+margin-top: 10px;
+
+}
+
+.blog__main-page .nythetContainer img{
+  background-color: #FF5FAF;
+  min-height: 60%;
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  max-height: 60%;
+  
+}
+
+.blog__main-page .RelNyheter h2{
+  margin-top: 30px;
+  }
+  
+
+.blog__main-page .nythetContainer p{
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
 
 
 /*Føndere*/
