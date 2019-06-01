@@ -1,6 +1,6 @@
 
 
-/*grid*/
+/* Grid */
 
 html,
 body {
@@ -12,6 +12,12 @@ body {
   top: 0;
   font-size: 100%;
   /*background-color: #01011A;*/
+}
+
+@media only screen and (max-width: 380px) {
+  body{
+    background-color: #171717;
+  }
 }
 
 .container {
@@ -110,7 +116,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 900px) {  /* 720px */
+@media only screen and (min-width: 640px) {  /* 720px */
   .col-1 {
     width: 4.33%;
   }
@@ -164,14 +170,20 @@ body {
   }
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
+@media only screen and (min-width: 500px) { /* 960px */
   .container {
     width: 75%;
     max-width: 1313px;
   }
 }
 
-/*typografi*/
+@media only screen and (min-width: 360px) { /* 960px */
+  .container {
+    width: 95%;
+  }
+}
+
+/* Typografi */
 * {
   font-family: interstate, sans-serif;
   color: #00032D;
@@ -193,7 +205,7 @@ h1{
 
 h2{
   font-family: interstate, sans-serif;
-  font-weight: 700; 
+  font-weight: 200; 
   font-style: normal;
   color: #B0B0B0;
   /*color: #FF5FAF;*/
@@ -209,15 +221,19 @@ h3{
 
 p{
   font-family: interstate, sans-serif;
-  font-weight: 300; 
+  font-weight: 400; 
   font-style: normal;
   color: #B0B0B0;
   font-size: 1em;
 }
 
 
-.wrapper__menu__newsletter h3{
-  margin-top: 30%;
+
+@media only screen and (max-width: 380px) {
+  h1{
+    font-size: 1.2em;
+    color: #B0B0B0;
+  }
 }
 
 
@@ -266,12 +282,6 @@ p{
 .nav .meny ul li a:hover::after {
   width: 60%;
 }
-
-
-
-
-
-
 
 
 .nav__content {
@@ -341,8 +351,6 @@ p{
     transition: 0.5s;
 }
 
-
-
 .logo img {
   width: 70%;
  
@@ -353,11 +361,10 @@ p{
    
   }
 
-
-  .meny{
+.meny{
     z-index: 4;
     float: right;
-    margin-right: -50px;
+    margin-right: 0px;
 }
 
 
@@ -368,6 +375,8 @@ p{
 }
 }
 
+
+/* Crum */
 
 .crum-line a{
   padding: 10px 0px 10px 0px;
@@ -389,15 +398,9 @@ p{
   padding-left: 0;
 }
 
-/*hamburger menu*/
 
-#burgermenu{
-    float: right;
-}
-#burgermenu__x{
-    float: right;
-}
 
+/* Hamburger menu */
 
 .hamburgermeny{
   width: 20px;
@@ -489,11 +492,6 @@ p{
   margin-left: 0;
 }
 
-
-
-
-
-
 .burgermenycontent__sosiale--medier .btn__icons--meny{
     width: 20px;
     margin-top: 0px;
@@ -501,26 +499,24 @@ p{
     margin-right: 20px;
 }
 
-
-
 .burgermenycontent .burgermenycontent__sosiale--medier ul{
     padding-left: 0;
     width: 100%;
     margin-top: 70px;
   }
   
-  .burgermenycontent .burgermenycontent__sosiale--medier li{
+.burgermenycontent .burgermenycontent__sosiale--medier li{
     list-style-type: none;
     font-size: 1em;
     padding: 5px 0px 5px 0px;
   }
 
-  .burgermenycontent .burgermenycontent__sosiale--medier li a:hover {
+.burgermenycontent .burgermenycontent__sosiale--medier li a:hover {
     transition: 0.2s;
     color: #7CFBFF;
   }
 
-  .burgermenycontent .burgermenycontent__sosiale--medier li a{
+.burgermenycontent .burgermenycontent__sosiale--medier li a{
     color: #B0B0B0;
     text-decoration: none;
     padding: 20px 0 20px 0;
@@ -529,6 +525,8 @@ p{
 
 
 
+
+/* Søke linje */ 
   .meny__søk{
       font-size: 1.5em;
       width: 30%;
@@ -547,11 +545,16 @@ p{
   }
 
 
-
-
+/* Nyhetsbrev */
   .wrapper__menu__newsletter{
     margin-top: 60px;
   }
+
+  
+.wrapper__menu__newsletter h3{
+  margin-top: 30%;
+}
+
 
   .meny__newsletter{
       font-size: 1.5em;
@@ -564,6 +567,7 @@ p{
       border-bottom: 1px solid #B0B0B0;;
       padding-bottom: 10px;
       transition: 0.5s;
+      font-size: 1.5em;
   }
 
   .meny__newsletter:hover{
@@ -588,8 +592,6 @@ p{
   transition: 0.2s;
 }
 
-
-
 .wrapper__menu__newsletter__call-to-action__btn:hover .newsletter__btn__icons--meny {
   padding-left: 20px;
   transition: 0.2s;
@@ -608,11 +610,10 @@ p{
   padding-right: 100px;
   }
 
-  .wrapper__menu__newsletter ul{
+.wrapper__menu__newsletter ul{
     margin-top: 80px;
     padding-left: 0;
     }
-
 
 
 .wrapper__menu__newsletter li a{
@@ -627,13 +628,24 @@ p{
       margin-bottom: -6px;
 }
 
+.podcast__call-to-action__btn:hover .newsletter__btn__icons--meny {
+  padding-left: 10%;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 380px) {
+  .meny__newsletter{
+    width: 100%;
+    font-size: 1em;
+}
+}
 
 
 
 
-  
 
-/*Home*/
+
+/* index.html */
 .index__background--img-filter{
   width: 100%;
   max-width: 100%;
@@ -649,6 +661,7 @@ p{
   top:0;
   position: absolute;
 }
+
 
 
 .ingress__hr{
@@ -671,6 +684,28 @@ p{
   width: 45%;
   left: 25%;
   right: 25%;
+
+}
+
+
+@media only screen and (max-width: 380px) {
+  .index__background--white-filter{
+    display: none;
+  }
+
+  .ingress__hr{
+    width: 30%;
+    border: 2px solid #FF5FAF;
+    margin-bottom: 5px;
+    margin-top: 15%;
+  }
+
+  .ingress{
+    text-align: left;
+    width: 100%;
+    left: 0%;
+    right: 0%; 
+  }  
 
 }
 
@@ -725,7 +760,8 @@ transform: scale(0.9);
 }
 
 .backgrond-color__category__index{
-  background-color: #010431;
+  /*background-color: #010431;*/
+  background-color: #171717;
   box-shadow:0px 0px 20px -12px rgba(0, 0, 0, 0.6);
 }
 
@@ -746,28 +782,95 @@ transform: scale(0.9);
   }
 
   .left-btn{
-    margin-left: 30%;
+    float: none;
+    margin-left: 0%;
   }
   
   .right-btn{
-    margin-right: 30%;
-  }
+    float: none;
+    margin-right: 0%;
+  } 
 
 }
 
 
 
-/*podkast cards*/
+.podcast__call-to-action__btn{
+  text-align: left;
+  background-color: #12132B;
+  border: 1px solid #B0B0B0;
+  border-radius: 35px;
+  padding: 13px 13px 13px 13px;
+  width: 100%;
+  transition: 0.5s;
+
+  font-size: 1em;
+  color: #B0B0B0;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.podcast__call-to-action__btn:hover{
+  border: 1px solid #7CFBFF;
+  background-color: #1c2437;
+  color: #7CFBFF;
+}
+
+/*.index__infograpgh__wrapper{
+
+}*/
+
+.index__infograph__right{
+  border-radius: 5px 0px 0px 5px;
+  background-color: #253049;
+  float: left;
+  width: 50%;
+}
+
+.index__infograph__left{
+  background-color: #FF5FAF;
+  border-radius: 0px 5px 5px 0px;
+  float:right;
+  width: 50%;
+}
+
+
+/* index.html/Føndere */
+.logo__føndere{
+  min-width: 100%;
+  max-width: 100%;
+  transition: 0.2s;
+}
+
+.logo__føndere:hover{
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+@media only screen and (max-width: 360px) {
+  .logo__føndere{
+    min-width: 70%;
+    max-width: 70%;
+  }
+}
+
+
+
+
+/* Podkast cards */
 .card__wrapper{
   min-width: 100%;
-  min-height: 360px;
-  max-height: 360px;
-  background-color: #253049;
-  border-radius: 5px;
+  min-height: 330px;
+  height: auto;
+  /*background-color: #253049;*/
+  background-color: #004355;
+  border-radius: 2px 2px 2px 2px;
   box-shadow:0px 0px 20px -12px rgba(0, 0, 0, 0.6);
   transition: 0.2s;
   border: 1px solid transparent;
   position: relative;
+  flex: 48%;
+  flex-grow: 0;
 }
 
 .card__wrapper:hover{
@@ -783,21 +886,26 @@ transform: scale(0.9);
   max-width: 100%;
   object-fit: cover;
   max-height: 170px;
+  border-radius: 2px 2px 0px 0px;
 }
 
 .card-text{
   padding: 15px;
-  min-height: 100%;
-  max-height: 100%;
 }
 
 .card-text h3{
-  margin-top: -10px;
+  margin-top: 0px;
   color: white;
+  margin-bottom: 0;
+  font-size: 1em;
 }
 
 .card-text p{
   color: #B0B0B0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 10%;
+  font-size: 0.8em;
 }
 
 .play__btn{
@@ -821,8 +929,6 @@ transform: scale(0.9);
   background-color: #7CFBFF;
   border: 5px solid #7CFBFF;
  }
-
-
 
  .card__link {
   position: absolute;
@@ -858,8 +964,7 @@ transform: scale(0.9);
  @media only screen and (max-width: 900px) {  /* 540px */
   .card__wrapper{
     min-width: 100%;
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 305px;
   }
 
   .card-text h3{
@@ -872,31 +977,107 @@ transform: scale(0.9);
   }
 
   .cards__img{
-    min-height: 50px;
+    min-height: 140px;
     min-width: 100%;
     max-width: 100%;
     object-fit: cover;
-    max-height: 50px;
+    max-height: 140px;
+    border-radius: 2px 2px 0px 0px;
   }
   
 }
 
 
+@media only screen and (max-width: 380px) {
+  .card__wrapper{
+    min-width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    background-color: #004355;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0px 0px 20px -12px rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
+    border: 1px solid transparent;
+    position: relative;
+    display: inline-flex;
+  }
+  
+  .cards__img{
+    min-height: 100%;
+    min-width: 30%;
+    max-width: 30%;
+    object-fit: cover;
+    max-height: 100%;
+    border-radius: 2px 0px 0px 2px;
+  }
+  
+  .card-text{
+    padding: 15px;
+  }
+  
+  .card-text h3{
+    margin-top: 0px;
+  }
+  
+  .play__btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 18px;
+    opacity: 0.7;
+    margin-left: 15px;
+  }
+
+   .card__specs ul{
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+/* podkast.html */
+
+.btn__number ul{
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.btn__number ul li{
+  display: inline;
+  color: white;
+  padding: 1%;
+  background-color: #253049;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.slider__content__open{
+  display: block;
+}
+
+.slider__content__closed{
+  display: none;
+}
+
+.slider__wrapper__open{
+  border: 2px solid #7CFBFF;
+  transition: 0.2s;
+}
 
 
 
-/*about*/
+/* about.html */
 
 .backgrond-color__category__about{
   background-color: #f1f1f1;
   padding-bottom: 80px;
 }
 
-.backgrond-color__category__about h2, .backgrond-color__category__about p {
+/*.backgrond-color__category__about h2, .backgrond-color__category__about p {
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-}
+}*/
 
 .about__text h2, .about__text p {
   color: #002C39;
@@ -922,11 +1103,6 @@ transform: scale(0.9);
 .instapic{
  display: inline-block;
 }
-
-
-
-
-
 
 .about__card__wrapper{
   min-width: 70%;
@@ -976,8 +1152,6 @@ transform: scale(0.9);
   border-top: 1px solid #FF5FAF;
 }
 
-
-
 .about__people__content__open{
   display: block;
 }
@@ -989,9 +1163,6 @@ transform: scale(0.9);
 .about__people__wrapper__open{
   border: 1px solid #7CFBFF;
 }
-
-
-
 
 .about__dropdown{
   border-top: 2px solid #FF5FAF;
@@ -1049,16 +1220,7 @@ transform: scale(0.9);
 }
 
 
-
-
-
-
-
-
-
- /*///////////////*/
-
-/*kontakt*/
+/* kontakt.html */
 .kontakt-skjema h2{
   margin-top: 4em;
   color: rgb(167, 167, 167);
@@ -1071,7 +1233,6 @@ transform: scale(0.9);
 .inputboks2{
   padding: 10px;
 }
-
 
 .text-boks{
   max-width: 100%;
@@ -1090,9 +1251,6 @@ transform: scale(0.9);
   background-color: #FFB200;
   color: #002C39;
 }
-
-
-
 
 .display_name_error_message p{
   display: block;
@@ -1119,80 +1277,21 @@ transform: scale(0.9);
 }
 
 
-
-
-
-
-
-
-
- .podcast__call-to-action__btn{
-  text-align: left;
-  background-color: #12132B;
-  border: 1px solid #B0B0B0;
-  border-radius: 35px;
-  padding: 13px 13px 13px 13px;
-  width: 100%;
-  transition: 0.5s;
-
-  font-size: 1em;
-  color: #B0B0B0;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-
-.podcast__call-to-action__btn:hover .newsletter__btn__icons--meny {
-  padding-left: 10%;
-  transition: 0.5s;
-}
-
-.podcast__call-to-action__btn:hover{
-  border: 1px solid #7CFBFF;
-  background-color: #1c2437;
-  color: #7CFBFF;
-}
-
-
-
-/*.index__infograpgh__wrapper{
-
-}*/
-
-.index__infograph__right{
-  border-radius: 5px 0px 0px 5px;
-  background-color: #253049;
-  float: left;
-  width: 50%;
-}
-
-.index__infograph__left{
-  background-color: #FF5FAF;
-  border-radius: 0px 5px 5px 0px;
-  float:right;
-  width: 50%;
-}
-
-
-/*blognyheter*/
+/* index.html/blognyheter */
 .background__color__hvit{
   background-color: white;
 }
-
 
 .RelNyheter{
   background-color: #FFF1F1; 
   max-width: 100%;
   /*height: 15%;*/
   margin: 100px 0 70px 0;
-
 }
-
 
 .nythetContainer{
 margin-bottom: 50px;
 margin-top: 10px;
-
 }
 
 .nythetContainer img{
@@ -1201,29 +1300,23 @@ margin-top: 10px;
   min-width: 100%;
   max-width: 100%;
   object-fit: cover;
-  max-height: 170px;
-  
+  max-height: 170px;  
 }
 
 .RelNyheter h2{
   margin-top: 30px;
   }
   
-
 .nythetContainer p{
   margin-bottom: 50px;
 }
-
-
-
 
 .background__color__hvit{
   background-color: white;
 }
 
 
-
-/*blog main page*/
+/* blog_forside.html */
 
 .blog__main-page .RelNyheter{
   background-color: #FFF1F1; 
@@ -1236,7 +1329,6 @@ margin-top: 10px;
 .blog__main-page .nythetContainer{
 margin-bottom: 50px;
 margin-top: 10px;
-
 }
 
 .blog__main-page .nythetContainer img{
@@ -1253,36 +1345,13 @@ margin-top: 10px;
   margin-top: 30px;
   }
   
-
 .blog__main-page .nythetContainer p{
   margin-bottom: 50px;
 }
 
 
 
-
-
-
-
-
-
-/*Føndere*/
-.logo__føndere{
-  min-width: 100%;
-  max-width: 100%;
-  transition: 0.2s;
-}
-
-.logo__føndere:hover{
-  transform: scale(1.2);
-  transition: 0.2s;
-}
-
-
-
-
-/*Footer*/
-
+/* Footer */
 .footer__background{
   background-color: #12132B;
   bottom: 0;
@@ -1298,8 +1367,7 @@ footer .logo{
 
 
 footer .content__meny{
-  margin-top: 25%;
-  
+  margin-top: 25%; 
 }
 
 footer .content__meny ul{
@@ -1365,8 +1433,6 @@ color: rgb(188, 0, 94);
 transition: 0.4s;
 }
 
-
-
 .product__info--content dd{
   margin-left:0;
   color: #B0B0B0;
@@ -1378,16 +1444,14 @@ transition: 0.4s;
   padding-right: 30px;
 }
 
-.product__text{
+/*.product__text{
   float: right;
-}
+}*/
 
 .btn__icons--product{
   width: 25px;
   margin-right: 5px;
 }
-
-
 
 .footer__sosiale--medier ul{
 padding-left: 0;
