@@ -53,8 +53,12 @@
 
 
                         <div id="burgermenu" class="hamburgermeny">
-                            <img src="image/meny/hamburger_meny.svg" alt="burgermeny">
+                            <img src="image/meny/hamburger_meny.svg" alt="burgermeny" class="display__block">
+                            <img src="image/meny/hamburger_meny_hvit.svg" alt="burgermeny" class="display__none">
+
+
                         </div>
+
                     </div>
                 </div>
 
@@ -92,8 +96,8 @@
 
             <div class="row">
 
-                <div class="col-6">
-                    <div class="wrapper__menu__newsletter">
+                <div class="col-6 display__block">
+                    <div class="wrapper__menu__newsletter ">
                         <h3>Bli med i nyhetsbrevet!</h3>
                         <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
                         <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter">
@@ -124,8 +128,12 @@
                 </div>
 
                 <div class="col-6">
+
+                    <div class="meny__søk__wrapper"><input type="text" placeholder="Søk.." class="meny__søk"></div>
                     <div class="content__meny">
+
                         <ul>
+                            <li></li>
                             <li><a href="index.html">Hjem<img src="image/icons/left-arrow-white.svg" alt="logo"
                                         class="btn__icons--meny"></a></li>
                             <li><a href="#">Utforsk<img src="image/icons/left-arrow-white.svg" alt="logo"
@@ -141,7 +149,6 @@
                             <li><a href="kontakt.html">Kontakt<img src="image/icons/left-arrow-white.svg" alt="logo"
                                         class="btn__icons--meny"></a></li>
                         </ul>
-                        <input type="text" placeholder="Søk.." class="meny__søk">
                     </div>
                 </div>
 
@@ -176,14 +183,14 @@
             <div class="col-6 col-12-sm">
                 <div class="header__btn h--btn1 clearfix">
 
-                    <a href="#" class="card__link"></a>
+                    <a href="#direct__newsletter" class="card__link"></a>
 
                     <div class="header--btn__img">
                         <img src="image/icons/contact.svg" alt="Podcasts" class="btn__icons">
                     </div>
 
                     <div class="header__btn__text">
-                        Alle podkaster!
+                        Bli med i nyhetsbrevet her
                     </div>
 
 
@@ -201,12 +208,33 @@
                     </div>
 
                     <div class="header__btn__text">
-                        Alle podkaster!
+                        Lytt til podkaster her
                     </div>
 
 
                 </div>
             </div>
+
+            <div class="col-6 col-12-sm display__none">
+                    <div class="morepodkasts__btn clearfix">
+
+                        <a href="#" class="card__link"></a>
+
+                        <div class="morepodkasts__btn__text">
+                            Velg blant 30 tema
+                        </div>
+
+                        <div class="morepodkasts__img">
+                            <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+        
 
 
 
@@ -238,11 +266,16 @@
         <div class="backgrond-color__category__index">
             <div class="container">
                 <div class="row">
+
+
                     <div class="col-12">
-                        <a href="alle_podkaster.html">
-                            <h2>Siste podkast episoder</h2>
-                        </a>
+                        <div class="undertitler">
+                            <a href="alle_podkaster.html">
+                                Siste podkast episoder:
+                            </a>
+                        </div>
                     </div>
+
 
                     <div class="colu col-3">
 
@@ -339,7 +372,7 @@
                         </div>
                     </div>
 
-                    <div class="colu col-3">
+                    <div class="colu col-3 display__block">
 
                         <div class="card__wrapper clearfix">
 
@@ -384,9 +417,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <a href="index.html">
-                            <h2>Hør lytternes favoritter</h2>
-                        </a>
+                        <div class="undertitler">
+                            <a href="index.html">
+                                Hør lytternes favoritter:
+                            </a>
+                        </div>
                     </div>
 
                     <div class="colu col-3">
@@ -483,7 +518,7 @@
                         </div>
                     </div>
 
-                    <div class="colu col-3">
+                    <div class="colu col-3 display__block">
 
                         <div class="card__wrapper clearfix">
 
@@ -518,51 +553,58 @@
                 </div>
             </div>
         </div>
+   
 
 
+            <!--call to action btn2 utforsk videre-->
 
-        <!--call to action btn2 utforsk videre-->
+            <div class="container">
 
-        <div class="container">
-
-            <div class="row">
-
-
-                <div class="col-6 col-12-sm">
-                    <div class="morepodkasts__btn clearfix">
-
-                        <a href="#" class="card__link"></a>
-
-                        <div class="morepodkasts__btn__text">
-                            Alle podkaster!
+                    <div class="row display__block">
+        
+                        <div class="col-12">
+                            <div class="undertitler center">
+                                <a href="index.html">
+                                    Utforsk
+                                </a>
+                            </div>
                         </div>
-
-                        <div class="morepodkasts__img">
-                            <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
+        
+        
+                        <div class="col-6 col-12-sm">
+                            <div class="morepodkasts__btn h--btn1 clearfix">
+        
+                                <a href="#" class="card__link"></a>
+        
+                                <div class="morepodkasts__btn__text">
+                                    Alle podkaster!
+                                </div>
+        
+                                <div class="morepodkasts__img">
+                                    <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
+                                </div>
+                            </div>
                         </div>
+        
+                        <div class="col-6 col-12-sm">
+                            <div class="morepodkasts__btn clearfix">
+        
+                                <a href="#" class="card__link"></a>
+        
+                                <div class="morepodkasts__btn__text">
+                                    Velg blant 30 tema
+                                </div>
+        
+                                <div class="morepodkasts__img">
+                                    <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
+                                </div>
+                            </div>
+                        </div>
+        
                     </div>
+        
                 </div>
-
-                <div class="col-6 col-12-sm">
-                    <div class="morepodkasts__btn clearfix">
-
-                        <a href="#" class="card__link"></a>
-
-                        <div class="morepodkasts__btn__text">
-                            Velg blant 30 tema
-                        </div>
-
-                        <div class="morepodkasts__img">
-                            <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
-        </div>
-    </div>
-
 
     <!--Info grafikk-->
 
@@ -592,7 +634,7 @@
 
                             <div class="bottom_numbers">
                                 <div class="tall__3">
-                                    <h4>Goal</h4>
+                                    <h2>Goal <i class="fas fa-flag"></i></h2>
                                     <h2>1 000 000</h2>
                                     <hr>
                                     <p>Downloads</p>
@@ -619,7 +661,7 @@
 
                             <div class="bottom_numbers">
                                 <div class="tall__3">
-                                    <h4>Goal</h4>
+                                    <h2>Goal <i class="fas fa-flag"></i></h2>
                                     <h2>1 000 000</h2>
                                     <hr>
                                     <p>Downloads</p>
@@ -634,62 +676,74 @@
         </div>
 
 
+
         <!--Blogg nyheter-->
         <div class="background__color__hvit">
             <div class="container">
                 <div class="row">
+
+
                     <div class="col-12">
-                        <a href="blog_forside.html">
-                            <h2>Blognyheter</h2>
-                        </a>
+                        <div class="undertitler-sort">
+                            <a href="blog_forside.html">Blognyheter:</a>
+                        </div>
                     </div>
+
+
                     <div class="col-4">
                         <div class="nythetContainer" onmouseover="hoverEffect(1)" onmouseout="hoverOff(1)">
-                            <div class="img-h4">
-                                <a href="#"><img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png"
-                                        alt="Nyhet2" id="nyhetImg1"></a>
-                                <a>
-                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
-                                </a>
-                            </div>
-                            <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
-                                teknologien
-                                spiller. En av de største bedriftene innen teknologi, VMware, har en annen innstilling.
-                                De
-                                mener digitalisering må til. </p>
 
+                            <div class="img-h4" id="nyhetImg1">
+                                <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                            </div>
+
+                            <div class="blog__card__text">
+                                <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+
+                                <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                    teknologien
+                                    spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                    innstilling.</p>
+                            </div>
+
+                            <a href="#" class="card__link"></a>
                         </div>
                     </div>
 
                     <div class="col-4">
                         <div class="nythetContainer" onmouseover="hoverEffect(2)" onmouseout="hoverOff(2)">
-                            <div class="img-h4">
-                                <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                        id="nyhetImg2"></a>
-                                <a>
-                                    <h4 id="nyhetH2">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                                </a>
+                            <div class="img-h4" id="nyhetImg2">
+                                <img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2">
                             </div>
-                            <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                                jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
 
+                            <div class="blog__card__text">
+                                <h4 id="nyhetH2">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
+
+                                <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med
+                                    VMware
+                                    jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                            </div>
+
+                            <a href="#" class="card__link"></a>
                         </div>
                     </div>
 
                     <div class="col-4">
                         <div class="nythetContainer" onmouseover="hoverEffect(3)" onmouseout="hoverOff(3)">
-                            <div class="img-h4">
-                                <a href="#"><img src="image/blog/Torgeir-Waterhouse-og-Silvija-Seres-1024x538.png"
-                                        alt="Nyhet3" id="nyhetImg3"></a>
-                                <a>
-                                    <h4 id="nyhetH3">DATA SOM ALLEMANNSRETT</h4>
-                                </a>
+                            <div class="img-h4" id="nyhetImg3">
+                                <img src="image/blog/Torgeir-Waterhouse-og-Silvija-Seres-1024x538.png" alt="Nyhet3">
                             </div>
-                            <p>Data og teknologi omgår alle i samfunnet og næringslivet. Det er derfor viktig å forstå
-                                hva som må til for å ivareta personvern og sikkerhet</p>
 
+                            <div class="blog__card__text">
+                                <h4 id="nyhetH3">DATA SOM ALLEMANNSRETT</h4>
+
+                                <p>Data og teknologi omgår alle i samfunnet og næringslivet. Det er derfor viktig å
+                                    forstå
+                                    hva som må til for å ivareta personvern og sikkerhet</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -699,12 +753,18 @@
 
         <!--Føndere-->
 
+    <div class="sponsorer__wrapper">
         <div class="container">
             <div class="row">
+
+
                 <div class="col-12">
-                    <a href="index.html">
-                        <h2>Føndere</h2>
-                    </a>
+                    <div class="undertitler">
+                        <a href="#">
+                            Føndere
+                        </a>
+
+                    </div>
                 </div>
 
 
@@ -774,6 +834,7 @@
             </div>
         </div>
     </div>
+</div>
 
 
 
@@ -791,7 +852,8 @@
                     </div>
                 </div>
 
-                <div class="col-9">
+
+                <div class="col-9 col-12-sm">
                     <div class="wrapper__menu__newsletter">
                         <h2>Bli med i nyhetsbrevet!</h2>
                         <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
@@ -815,7 +877,16 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-12  display__none">
+                        <div class="backtotop">
+                            <a href="#">
+                                Gå tilbake til toppen
+                            </a>
+    
+                        </div>
+                    </div>
+
+                <div class="col-3 col-12-sm">
                     <div class="content__meny">
 
                         <ul>
@@ -834,16 +905,13 @@
                             <li><a href="kontakt.html"><img src="image/icons/right-arrow-white.svg" alt="logo"
                                         class="btn__icons--meny">Kontakt</a></li>
                         </ul>
-
-
-
                     </div>
-
-
                 </div>
+
                 <div class="col-12">
                     <hr>
                 </div>
+
             </div>
         </div>
 
@@ -853,13 +921,11 @@
 
 
 
-                <div class="col-6">
+                <div class="col-6 col-12-sm">
 
                     <div class="product__info--content">
 
-                        <h2><img src="image/icons/discount.svg" alt="Podcasts" class="btn__icons--product">Produktpakker
-                            vi
-                            tilbyr</h2>
+                        <h2>Produktpakker vi tilbyr:</h2>
 
 
                         <dl>
@@ -883,19 +949,7 @@
                 </div>
 
 
-
-
-
-
-                <div class="col-3">
-                    <div class="footer__kontakt">
-                        <h2>Kontakt oss</h2>
-                        <p>Epost: Lørn@tech.com</p>
-                        <p>Tlf: +47 9494 4949</p>
-                    </div>
-                </div>
-
-                <div class="col-3">
+                <div class="col-3 col-12-sm">
                     <div class="footer__sosiale--medier">
                         <h2>Følg oss!</h2>
                         <ul>
@@ -913,7 +967,14 @@
                     </div>
                 </div>
 
-
+                
+                <div class="col-3 col-12-sm">
+                        <div class="footer__kontakt">
+                            <h2>Kontakt oss</h2>
+                            <p>Epost: Lørn@tech.com</p>
+                            <p>Tlf: +47 9494 4949</p>
+                        </div>
+                    </div>
             </div>
         </div>
 
