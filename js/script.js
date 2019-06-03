@@ -104,10 +104,11 @@ function myFunction(x) {
 
 /*nyhetsbrev validering*/
 
-function validate() {
+
+function validate(id) {
     let regExuserEmail = /^[A-Za-z0-9._-]+@[a-zA-Z0-9+.-]+\.[a-zA-Z]{2,4}$/;
-    let email = document.getElementById("epost__nyhetsbrev").value;
-    let errorEmail = document.getElementsByClassName("errormessage__nyhetsbrev");
+    let email = document.getElementById("epost__nyhetsbrev2").value;
+    let errorEmail = document.getElementsByClassName("errormessage__nyhetsbrev" + id);
 
     if (email.match(regExuserEmail)) {
         errorEmail[0].classList.remove('display_epost_error_message');
@@ -119,9 +120,6 @@ function validate() {
     }
 
 }
-
-document.getElementById("newsletter__submit").addEventListener("click", validate);
-
 
 
 

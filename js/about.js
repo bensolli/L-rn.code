@@ -76,7 +76,7 @@ function myFunction_dropdown(id) {
 
 
 
-/*graphs*/
+/*graphs
 var ChartsNinja_d808cf50afcf4323dacab6f861edf90d = function() {
     var cnElm = document.getElementById('ChartsNinja_d808cf50afcf4323dacab6f861edf90d');
     if (cnElm) {
@@ -106,4 +106,4 @@ var ChartsNinja_d808cf50afcf4323dacab6f861edf90d = function() {
         console.log('Charts Ninja element "ChartsNinja_d808cf50afcf4323dacab6f861edf90d" not found.');
     }
 };
-ChartsNinja_d808cf50afcf4323dacab6f861edf90d();
+ChartsNinja_d808cf50afcf4323dacab6f861edf90d();*/

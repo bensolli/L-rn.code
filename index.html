@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="nn">
 
 <head>
     <meta charset="UTF-8">
@@ -39,7 +39,7 @@
                 <div class="nav clearfix">
 
                     <div class="logo">
-                        <a href="index.html"><img src="image/meny/lørn-white.svg" alt="logo" id="logo-m"></a>
+                        <a href="index.html"><img src="image/meny/lørn-white.svg" alt="logo"></a>
                     </div>
 
                     <div class="meny">
@@ -79,7 +79,7 @@
                     <div class="nav clearfix">
 
                         <div class="logo">
-                            <a href="index.html"><img src="image/meny/lørn-white.svg" alt="logo" id="logo-m"></a>
+                            <a href="index.html"><img src="image/meny/lørn-white.svg" alt="logo"></a>
                         </div>
 
                         <div class="meny">
@@ -100,14 +100,29 @@
                     <div class="wrapper__menu__newsletter ">
                         <h3>Bli med i nyhetsbrevet!</h3>
                         <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
-                        <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter">
+                        <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter" id="epost__nyhetsbrev2">
                         <ul>
                             <li class="newsletter__personvern"><a href="nyheter.html">Personvern</a></li>
-                            <li><button class="wrapper__menu__newsletter__call-to-action__btn"><a href="index.html">Meld
-                                        på her!<img src="image/icons/right-arrow-white.svg" alt="logo"
-                                            class="newsletter__btn__icons--meny"></a></button></li>
                         </ul>
                     </div>
+
+                    
+                    <div class="newsletter__btn clearfix" id="newsletter__submit2" onclick="validate(2)">
+        
+                            <div class="morepodkasts__btn__text">
+                                    Meld på her!
+                            </div>
+    
+                            <div class="morepodkasts__img">
+                                <img src="image/icons/right-arrow-white.svg" alt="logo">
+                            </div>
+                        </div>
+
+                    <div class="errormessage__nyhetsbrev2 no_epost_error_message">
+                        <p>*Obs! noe er ikke riktig</p>
+                    </div>
+
+
                     <div class="burgermenycontent__sosiale--medier">
                         <ul>
                             <li><a href="https://www.facebook.com/lrntech1/"><img src="image/icons/facebook.svg"
@@ -144,7 +159,7 @@
                                         class="btn__icons--meny"></a></li>
                             <li><a href="#">Produkter<img src="image/icons/left-arrow-white.svg" alt="logo"
                                         class="btn__icons--meny"></a></li>
-                            <li><a href="about.html">Om Oss<img src="image/icons/left-arrow-white.svg" alt="logo"
+                            <li><a href="about.html">Om oss<img src="image/icons/left-arrow-white.svg" alt="logo"
                                         class="btn__icons--meny"></a></li>
                             <li><a href="kontakt.html">Kontakt<img src="image/icons/left-arrow-white.svg" alt="logo"
                                         class="btn__icons--meny"></a></li>
@@ -161,8 +176,8 @@
     <!--Header-->
 
     <!--Header bakgrunn-->
-    <img src="image/hjem/index_white-filter.svg" class="index__background--white-filter">
-    <img src="image/hjem/silvija-lørner.jpg" class="index__background--img-filter">
+    <img src="image/hjem/index_white-filter.svg" alt=" " class="index__background--white-filter">
+    <img src="image/hjem/silvija-lørner.jpg" alt="silivia seres" class="index__background--img-filter">
 
 
     <div class="container">
@@ -183,7 +198,7 @@
             <div class="col-6 col-12-sm">
                 <div class="header__btn h--btn1 clearfix">
 
-                    <a href="#direct__newsletter" class="card__link"></a>
+                    <a href="#direct__newsletter" class="card__link" title="bli med i nyhetbrevet"></a>
 
                     <div class="header--btn__img">
                         <img src="image/icons/contact.svg" alt="Podcasts" class="btn__icons">
@@ -201,7 +216,7 @@
             <div class="col-6 col-12-sm">
                 <div class="header__btn clearfix">
 
-                    <a href="#" class="card__link"></a>
+                    <a href="#" class="card__link" title="lytt til podkaster"></a>
 
                     <div class="header--btn__img">
                         <img src="image/icons/podcast.svg" alt="Podcasts" class="btn__icons">
@@ -218,14 +233,14 @@
             <div class="col-6 col-12-sm display__none">
                 <div class="morepodkasts__btn clearfix">
 
-                    <a href="#" class="card__link"></a>
+                    <a href="#" class="card__link" title="velg blant 30 tema"></a>
 
                     <div class="morepodkasts__btn__text">
                         Velg blant 30 tema
                     </div>
 
                     <div class="morepodkasts__img">
-                        <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
+                        <img src="image/icons/right-arrow-white.svg" alt="logo">
                     </div>
                 </div>
             </div>
@@ -293,10 +308,10 @@
 
 
                             <div class="card-text">
-                                <h3># 397<br /> What’s NEW</h3>
+                                <h3># 397 What’s NEW</h3>
                                 <p>Tore Totland <br /> Fra NEW and Company AS</p>
                             </div>
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -324,11 +339,11 @@
 
 
                             <div class="card-text">
-                                <h3># 396<br /> «Open Innovation» i praksis</h3>
+                                <h3># 396 «Open Innovation» i praksis</h3>
                                 <p>Simen Armond <br />
                                     Fra NCE Finance Innovation</p>
                             </div>
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -356,11 +371,11 @@
 
 
                             <div class="card-text">
-                                <h3># 395<br /> Liten FinTech mot de store</h3>
+                                <h3># 395 Liten FinTech mot de store</h3>
                                 <p>Henrik Johannessen<br />
                                     Fra Tjommi</p>
                             </div>
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -388,11 +403,11 @@
 
 
                             <div class="card-text">
-                                <h3># 394<br /> Kartteknologi og digital tvilling.</h3>
+                                <h3># 394 Kartteknologi og digital tvilling.</h3>
                                 <p>Geir Hansen <br />
                                     Fra Geodata</p>
                             </div>
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -444,7 +459,7 @@
                             </div>
 
 
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -475,7 +490,7 @@
                                 <h3># 335 Data som allmenrett</h3>
                                 <p>Torgeir Waterhouse Fra IKT Norge</p>
                             </div>
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -506,7 +521,7 @@
                                 <h3># 335 Data som allmenrett</h3>
                                 <p>Torgeir Waterhouse Fra IKT Norge</p>
                             </div>
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -537,7 +552,7 @@
                                 <h3># 335 Data som allmenrett</h3>
                                 <p>Torgeir Waterhouse Fra IKT Norge</p>
                             </div>
-                            <a href="#" class="card__link"></a>
+                            <a href="#" class="card__link" title="hør podkast"></a>
                         </div>
 
 
@@ -581,7 +596,7 @@
                         </div>
 
                         <div class="morepodkasts__img">
-                            <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
+                            <img src="image/icons/right-arrow-white.svg" alt="logo">
                         </div>
                     </div>
                 </div>
@@ -596,7 +611,7 @@
                         </div>
 
                         <div class="morepodkasts__img">
-                            <img src="image/icons/right-arrow-white.svg" alt="logo"></a>
+                            <img src="image/icons/right-arrow-white.svg" alt="logo">
                         </div>
                     </div>
                 </div>
@@ -691,7 +706,7 @@
 
 
                     <div class="col-4">
-                        <div class="nythetContainer" onmouseover="hoverEffect(1)" onmouseout="hoverOff(1)">
+                        <div class="nythetContainer" onmouseover="hoverEffect(1)" onmouseout="hoverOff(1)" onfocus="hoverEffect(1)" onblur="hoverOff(1)">
 
                             <div class="img-h4" id="nyhetImg1">
                                 <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
@@ -711,7 +726,7 @@
                     </div>
 
                     <div class="col-4">
-                        <div class="nythetContainer" onmouseover="hoverEffect(2)" onmouseout="hoverOff(2)">
+                        <div class="nythetContainer" onmouseover="hoverEffect(2)" onmouseout="hoverOff(2)" onfocus="hoverEffect(2)" onblur="hoverOff(2)">
                             <div class="img-h4" id="nyhetImg2">
                                 <img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2">
                             </div>
@@ -729,7 +744,7 @@
                     </div>
 
                     <div class="col-4">
-                        <div class="nythetContainer" onmouseover="hoverEffect(3)" onmouseout="hoverOff(3)">
+                        <div class="nythetContainer" onmouseover="hoverEffect(3)" onmouseout="hoverOff(3)" onfocus="hoverEffect(3)" onblur="hoverOff(3)">
                             <div class="img-h4" id="nyhetImg3">
                                 <img src="image/blog/Torgeir-Waterhouse-og-Silvija-Seres-1024x538.png" alt="Nyhet3">
                             </div>
@@ -773,63 +788,63 @@
 
                     <div class="col-2 col-6-sm">
                         <a href="https://ikuben.no/"><img src="image/føndere/NCEiKuben_tittel_neg-768x215.png"
-                                alt="logo" class="logo__føndere"></a>
+                                alt="logo" class="logo__fondere"></a>
                     </div>
                     <div class="col-2 col-6-sm">
                         <a href="https://www.ons.no/"><img src="image/føndere/ons-logo-300x78.png" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
                     <div class="col-2 col-6-sm">
                         <a href="https://scatecsolar.com/"><img
                                 src="image/føndere/Scatec-Logo-Neg-Tag-Digital-768x200.png" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
 
                     <div class="col-2 col-6-sm">
                         <a href="https://folkoslo.no/"><img src="image/føndere/Skjermbilde-2019-01-20-kl.-17.20.38.png"
-                                alt="logo" class="logo__føndere"></a>
+                                alt="logo" class="logo__fondere"></a>
                     </div>
 
                     <div class="col-2 col-6-sm">
                         <a href="https://www.sparebank1.no/nb/sr-bank/privat.html"><img
-                                src="image/føndere/sr-bank-hvit-300x128.png" alt="logo" class="logo__føndere"></a>
+                                src="image/føndere/sr-bank-hvit-300x128.png" alt="logo" class="logo__fondere"></a>
                     </div>
                     <div class="col-2 col-6-sm">
                         <a href="https://startuplab.no/"><img src="image/føndere/StartupLab.png" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
 
 
                     <div class="col-2 col-6-sm">
                         <a href="https://www.vmware.com/no.html"><img
                                 src="image/føndere/VMware_logo_wht_RGB_300dpi-300x105.jpg" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
                     <div class="col-2 col-6-sm">
                         <a href="https://www.webstep.no/"><img src="image/føndere/webstep_logo_neg-768x136.png"
-                                alt="logo" class="logo__føndere"></a>
+                                alt="logo" class="logo__fondere"></a>
                     </div>
 
                     <div class="col-2 col-6-sm">
                         <a href="https://katapultocean.com/"><img
                                 src="image/føndere/KatapultAccelerator_Logo_white-768x452.png" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
 
                     <div class="col-4 col-12-sm">
                         <a href="https://www.kompetanseforum.no/"><img
                                 src="image/føndere/Kompetanseforum_Logo_Transparent_Negativ-1024x341.png" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
 
                     <div class="col-2 col-6-sm">
                         <a href="https://www.tekna.no/"><img src="image/føndere/tekna-logo.png" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
 
                     <div class="col-2 col-6-sm">
                         <a href="https://www.tieto.com/no/"><img src="image/føndere/tieto-300x101.png" alt="logo"
-                                class="logo__føndere"></a>
+                                class="logo__fondere"></a>
                     </div>
 
                 </div>
@@ -849,7 +864,7 @@
 
                 <div class="col-12">
                     <div class="logo" id="direct__newsletter">
-                        <a href="index.html"><img src="image/meny/lørn-white.svg" alt="logo" id="logo-m"></a>
+                        <a href="index.html"><img src="image/meny/lørn-white.svg" alt="logo"></a>
                     </div>
                 </div>
 
@@ -859,19 +874,27 @@
                         <h2>Bli med i nyhetsbrevet!</h2>
                         <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
                         <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter"
-                            id="epost__nyhetsbrev">
+                            id="epost__nyhetsbrev1">
 
 
 
                         <ul>
                             <li class="newsletter__personvern"><a href="nyheter.html">Personvern</a></li>
-                            <li id="newsletter__submit"><button
-                                    class="wrapper__menu__newsletter__call-to-action__btn">Meld
-                                    på her!<img src="image/icons/right-arrow-white.svg" alt="logo"
-                                        class="newsletter__btn__icons--meny"></button></li>
                         </ul>
 
-                        <div class="errormessage__nyhetsbrev no_epost_error_message">
+                        <div class="newsletter__btn clearfix" id="newsletter__submit1" onclick="validate(1)">
+        
+                                <div class="morepodkasts__btn__text">
+                                        Meld
+                                        på her!
+                                </div>
+        
+                                <div class="morepodkasts__img">
+                                    <img src="image/icons/right-arrow-white.svg" alt="logo">
+                                </div>
+                            </div>
+
+                        <div class="errormessage__nyhetsbrev1 no_epost_error_message">
                             <p>*Obs! noe er ikke riktig</p>
                         </div>
 
