@@ -111,7 +111,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
+@media only screen and (min-width: 540px) {  /* 540px */
   .container {
     width: 80%;
   }
@@ -570,7 +570,7 @@ p{
   }
 
 /* Søke linje */ 
-  .meny__søk{
+  .meny__sok{
       font-size: 1.5em;
       width: 30%;
       position: absolute;
@@ -582,7 +582,7 @@ p{
       transition: 0.5s;
   }
 
-  .meny__søk:hover{
+  .meny__sok:hover{
       width: 35%;
       transition: 0.5s;
   }
@@ -598,13 +598,13 @@ p{
       padding: 0px 20px 10px 0;
     }
 
-    .meny__søk{
+    .meny__sok{
       width: 90%;
       position: static;
       margin-left: 15px;
     }
 
-    .meny__søk:hover{
+    .meny__sok:hover{
       width: 90%;
   }
   }
@@ -721,10 +721,6 @@ p{
 }
 
 
-
-
-
-
 /* index.html */
 .index__background--img-filter{
     max-width: 100%;
@@ -733,8 +729,9 @@ p{
     max-height: 100%;
     top: 0;
     position: absolute;
-    z-index: 1;
     object-fit: cover;
+    z-index: 1;
+   
 }
 
 .index__background--white-filter{
@@ -752,7 +749,7 @@ p{
 @media only screen and (max-width: 380px) {
 
   .index__background--img-filter{
-    object-fit: contain;
+    object-fit: cover;
     min-height: 0;
     opacity: 0.6;
 }
@@ -829,87 +826,11 @@ p{
 }
 
 .backgrond-color__category__index{
+    z-index: 6;
+    position:relative;
   background-color: #171717;
   box-shadow:0px 0px 20px -12px rgba(0, 0, 0, 0.6);
 }
-
-
-
-/*
-.left-btn{
-  float: left;
-  margin-left: 55%;
-}
-
-.right-btn{
-  float: right;
-  margin-right: 55%;
-}
-
-.call-to-action__btn{
-  z-index: 2;
-  text-align: left;
-  position: sticky;
-  background-color: white;
-  border: 1px solid #282828;
-  border-radius: 35px;
-  padding: 13px;
-  width: 200px;
-  transition: 0.2s;
-  text-decoration: none;
-  margin-bottom: 150px;
-}
-
-
-.call-to-action__btn:hover{
-/*background-color: rgba(0, 0, 0, 0.1);
-box-shadow:0px 0px 20px -12px rgba(0, 0, 0, 0.6);
-border: 1px solid #FF5FAF;
-transition: 0.2s;
-color: #B0B0B0;
-transform: scale(0.9);
-}
-
-.btn__icons{
-  width: 20px;
-  padding: 2px;
-  margin-top: 0px;
-  margin-bottom: -7px;
-  margin-right: 10px;
-}
-
-
-
-
-
-@media only screen and (max-width: 900px) {
-
-  .call-to-action__btn{
-    z-index: 4;
-    text-align: left;
-    position: sticky;
-    background-color: white;
-    border: 1px solid #282828;
-    border-radius: 35px;
-    padding: 10px;
-    width: 100%;
-    transition: 0.2s;
-    position: absolute;
-  }
-
-  .left-btn{
-    float: none;
-    margin-left: 0%;
-    margin-top: 80px;
-  }
-  
-  .right-btn{
-    float: none;
-    margin-right: 0%;
-  } 
-
-}*/
-
 
 
 .header__btn{
@@ -974,9 +895,6 @@ transform: scale(0.9);
 }
 
 }
-
-
-
 
 .morepodkasts__btn{
   z-index: 3;
@@ -1164,8 +1082,8 @@ transform: scale(0.9);
   transition: 0.2s;
   border: 1px solid transparent;
   position: relative;
-  flex: 48%;
-  flex-grow: 0;
+  /*flex: 48%;
+  flex-grow: 0;*/
 }
 
 .card__wrapper:hover{
@@ -1211,7 +1129,7 @@ transform: scale(0.9);
   position: relative;
   z-index: 1;
   background-color: #B0B0B0;
-  border: 5px solid #B0B0B0;
+  border: 5px solid transparent;
   border-radius: 100%;
   width: 50px;
   height: 50px;
@@ -1226,7 +1144,7 @@ transform: scale(0.9);
   transform: scale(1.1);
   transition: 0.5s;
   background-color: #7CFBFF;
-  border: 5px solid #7CFBFF;
+  border: 5px solid transparent;
  }
 
  .card__link {
@@ -1238,7 +1156,7 @@ transform: scale(0.9);
 }
 
 .card__specs{
-  background-color: none;
+  background-color: transparent;
 }
 
 
@@ -1309,7 +1227,7 @@ transform: scale(0.9);
     transition: 0.2s;
     border: 1px solid transparent;
     position: relative;
-    display: inline-flex;
+    /*display: inline-flex;*/
   }
   
   .cards__img{
@@ -1379,15 +1297,11 @@ transform: scale(0.9);
 /* about.html */
 
 .backgrond-color__category__about{
+    position: relative;
+    z-index: 6;
   background-color: #f1f1f1;
   padding-bottom: 80px;
 }
-
-/*.backgrond-color__category__about h2, .backgrond-color__category__about p {
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-}*/
 
 .about__text{
   width: 50%;
@@ -1709,7 +1623,6 @@ margin-top: 10px;
   margin-bottom: 50px;
   height: 100%;
   overflow: visible;
-  color: #222222;
 }
 
 
@@ -1724,9 +1637,10 @@ margin-top: 10px;
     transition: 0.4s;
 }
 
-.blog__card__text{
+.blog__card__text p{
   float: left;
   width: 100%;
+  color: #222222;
 }
 
 @media only screen and (max-width: 380px) {
@@ -1945,9 +1859,6 @@ transition: 0.4s;
       font-size: 1.5em;
    }
 }
-
-
-
 
 
 .footer__sosiale--medier ul{

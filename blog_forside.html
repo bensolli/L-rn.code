@@ -111,17 +111,35 @@
             <div class="row">
 
                 <div class="col-6 display__block">
-                    <div class="wrapper__menu__newsletter ">
-                        <h3>Bli med i nyhetsbrevet!</h3>
-                        <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
-                        <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter">
-                        <ul>
-                            <li class="newsletter__personvern"><a href="nyheter.html">Personvern</a></li>
-                            <li><button class="wrapper__menu__newsletter__call-to-action__btn"><a href="index.html">Meld
-                                        på her!<img src="image/icons/right-arrow-white.svg" alt="logo"
-                                            class="newsletter__btn__icons--meny"></a></button></li>
-                        </ul>
-                    </div>
+                        <div class="wrapper__menu__newsletter">
+                                <h2>Bli med i nyhetsbrevet!</h2>
+                                <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
+                                <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter"
+                                    id="epost__nyhetsbrev2">
+        
+        
+        
+                                <ul>
+                                    <li class="newsletter__personvern"><a href="nyheter.html">Personvern</a></li>
+                                </ul>
+        
+                                <div class="newsletter__btn clearfix" id="newsletter__submit2" onclick="validate(2)">
+                
+                                        <div class="morepodkasts__btn__text">
+                                                Meld
+                                                på her!
+                                        </div>
+                
+                                        <div class="morepodkasts__img">
+                                            <img src="image/icons/right-arrow-white.svg" alt="logo">
+                                        </div>
+                                    </div>
+        
+                                <div class="errormessage__nyhetsbrev2 no_epost_error_message">
+                                    <p>*Obs! noe er ikke riktig</p>
+                                </div>
+        
+                            </div>
                     <div class="burgermenycontent__sosiale--medier">
                         <ul>
                             <li><a href="https://www.facebook.com/lrntech1/"><img src="image/icons/facebook.svg"
@@ -143,7 +161,7 @@
 
                 <div class="col-6">
 
-                    <div class="meny__søk__wrapper"><input type="text" placeholder="Søk.." class="meny__søk"></div>
+                    <div class="meny__sok__wrapper"><input type="text" placeholder="Søk.." class="meny__sok"></div>
                     <div class="content__meny">
 
                         <ul>
@@ -176,134 +194,186 @@
             <div class="row">
 
                 <div class="col-12">
-                    <div class="nythetContainer" onmouseover="hoverEffect(1)" onmouseout="hoverOff(1)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png"
-                                    alt="Nyhet2" id="nyhetImg1"></a>
-                            <a>
-                                <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
-                            </a>
-                        </div>
-                        <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle teknologien
-                            spiller. En av de største bedriftene innen teknologi, VMware, har en annen innstilling. De
-                            mener digitalisering må til. </p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(1)" onmouseout="hoverOff(1)" onfocus="hoverEffect(1)" onblur="hoverOff(1)">
+                        
+                            <div class="img-h4" id="nyhetImg1">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
 
                 <div class="col-6">
-                    <div class="nythetContainer" onmouseover="hoverEffect(2)" onmouseout="hoverOff(2)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png"
-                                    alt="Nyhet2" id="nyhetImg2"></a>
-                            <a>
-                                <h4 id="nyhetH2">TEKNOLOGIENS GODER</h4>
-                            </a>
-                        </div>
-                        <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle teknologien
-                            spiller. En av de største bedriftene innen teknologi, VMware, har en annen innstilling. De
-                            mener digitalisering må til. </p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(2)" onmouseout="hoverOff(2)" onfocus="hoverEffect(2)" onblur="hoverOff(2)">
+                       
+                            <div class="img-h4" id="nyhetImg2">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
 
                 <div class="col-6">
-                    <div class="nythetContainer" onmouseover="hoverEffect(3)" onmouseout="hoverOff(3)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                    id="nyhetImg3"></a>
-                            <a>
-                                <h4 id="nyhetH3">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                            </a>
-                        </div>
-                        <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                            jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(3)" onmouseout="hoverOff(3)" onfocus="hoverEffect(3)" onblur="hoverOff(3)">
+                        
+                            <div class="img-h4" id="nyhetImg3">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="nythetContainer" onmouseover="hoverEffect(4)" onmouseout="hoverOff(4)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                    id="nyhetImg4"></a>
-                            <a>
-                                <h4 id="nyhetH4">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                            </a>
-                        </div>
-                        <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                            jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(4)" onmouseout="hoverOff(4)" onfocus="hoverEffect(4)" onblur="hoverOff(4)">
+                       
+                            <div class="img-h4" id="nyhetImg4">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <div class="nythetContainer" onmouseover="hoverEffect(5)" onmouseout="hoverOff(5)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                    id="nyhetImg5"></a>
-                            <a>
-                                <h4 id="nyhetH5">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                            </a>
-                        </div>
-                        <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                            jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(5)" onmouseout="hoverOff(5)" onfocus="hoverEffect(5)" onblur="hoverOff(5)">
+                      
+                            <div class="img-h4" id="nyhetImg5">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="nythetContainer" onmouseover="hoverEffect(6)" onmouseout="hoverOff(6)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                    id="nyhetImg6"></a>
-                            <a>
-                                <h4 id="nyhetH6">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                            </a>
-                        </div>
-                        <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                            jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(6)" onmouseout="hoverOff(6)" onfocus="hoverEffect(6)" onblur="hoverOff(6)">
+                      
+                            <div class="img-h4" id="nyhetImg6">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="nythetContainer" onmouseover="hoverEffect(7)" onmouseout="hoverOff(7)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                    id="nyhetImg7"></a>
-                            <a>
-                                <h4 id="nyhetH7">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                            </a>
-                        </div>
-                        <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                            jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(7)" onmouseout="hoverOff(7)" onfocus="hoverEffect(7)" onblur="hoverOff(7)">
+                       
+                            <div class="img-h4" id="nyhetImg7">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="nythetContainer" onmouseover="hoverEffect(8)" onmouseout="hoverOff(8)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                    id="nyhetImg8"></a>
-                            <a>
-                                <h4 id="nyhetH8">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                            </a>
-                        </div>
-                        <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                            jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(8)" onmouseout="hoverOff(8)" onfocus="hoverEffect(8)" onblur="hoverOff(8)">
+                       
+                            <div class="img-h4" id="nyhetImg8">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="nythetContainer" onmouseover="hoverEffect(9)" onmouseout="hoverOff(9)">
-                        <div class="img-h4">
-                            <a href="#"><img src="image/blog/Mads-Grandt-og-Silvija-Seres-1024x538.png" alt="Nyhet2"
-                                    id="nyhetImg9"></a>
-                            <a>
-                                <h4 id="nyhetH9">TEKNOLOGIEN SOM GJØR VERDEN BEDRE</h4>
-                            </a>
-                        </div>
-                        <p>I 2018 hjalp Flyktninghjelpen over 9 millioner mennesker på flukt. I samarbeid med VMware
-                            jobber de nå med et nytt prøveprosjekt for å hjelpe både</p>
+                    <div class="nythetContainer" onmouseover="hoverEffect(9)" onmouseout="hoverOff(9)" onfocus="hoverEffect(9)" onblur="hoverOff(9)">
+                      
+                            <div class="img-h4" id="nyhetImg9">
+                                    <img src="image/blog/Angeliqua-Ramming-Gaden-og-Silvija-Seres-768x403.png" alt="Nyhet2">
+                                </div>
+    
+                                <div class="blog__card__text">
+                                    <h4 id="nyhetH1">TEKNOLOGIENS GODER</h4>
+    
+                                    <p>I en verden full av endringer er det mange som engster seg over hvor stor rolle
+                                        teknologien
+                                        spiller. En av de største bedriftene innen teknologi, VMware, har en annen
+                                        innstilling.</p>
+                                </div>
+    
+                                <a href="#" class="card__link"></a>
 
                     </div>
                 </div>
@@ -338,27 +408,35 @@
 
 
                 <div class="col-9 col-12-sm">
-                    <div class="wrapper__menu__newsletter">
-                        <h2>Bli med i nyhetsbrevet!</h2>
-                        <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
-                        <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter"
-                            id="epost__nyhetsbrev">
-
-
-
-                        <ul>
-                            <li class="newsletter__personvern"><a href="nyheter.html">Personvern</a></li>
-                            <li id="newsletter__submit"><button
-                                    class="wrapper__menu__newsletter__call-to-action__btn">Meld
-                                    på her!<img src="image/icons/right-arrow-white.svg" alt="logo"
-                                        class="newsletter__btn__icons--meny"></button></li>
-                        </ul>
-
-                        <div class="errormessage__nyhetsbrev no_epost_error_message">
-                            <p>*Obs! noe er ikke riktig</p>
-                        </div>
-
-                    </div>
+                        <div class="wrapper__menu__newsletter">
+                                <h2>Bli med i nyhetsbrevet!</h2>
+                                <p>Du kan når som helst melde deg ut av Nyhetsbrevlisten</p>
+                                <input type="text" placeholder="eksempel@gmail.com..." class="meny__newsletter"
+                                    id="epost__nyhetsbrev1">
+        
+        
+        
+                                <ul>
+                                    <li class="newsletter__personvern"><a href="nyheter.html">Personvern</a></li>
+                                </ul>
+        
+                                <div class="newsletter__btn clearfix" id="newsletter__submit1" onclick="validate(1)">
+                
+                                        <div class="morepodkasts__btn__text">
+                                                Meld
+                                                på her!
+                                        </div>
+                
+                                        <div class="morepodkasts__img">
+                                            <img src="image/icons/right-arrow-white.svg" alt="logo">
+                                        </div>
+                                    </div>
+        
+                                <div class="errormessage__nyhetsbrev1 no_epost_error_message">
+                                    <p>*Obs! noe er ikke riktig</p>
+                                </div>
+        
+                            </div>
                 </div>
 
                 <div class="col-12  display__none">
