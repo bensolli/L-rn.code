@@ -398,8 +398,12 @@ p{
   color: #B0B0B0;
   text-decoration: none;
   transition: 0.2s;
-  z-index: 2;
+  z-index: 4;
   position: relative;
+}
+
+.crum-hvit .crum-line a{
+  color: #000;
 }
 
 .crum-line a:hover{
@@ -621,9 +625,9 @@ p{
       margin-top: 10px;
       width: 350px;
       position: absolute;
-      background-color: #171717;
+      background-color: #12132B;
       color: #B0B0B0;;
-      border:  #171717;
+      border:  #12132B;
       border-bottom: 1px solid #B0B0B0;;
       padding-bottom: 10px;
       transition: 0.5s;
@@ -638,6 +642,10 @@ p{
 
 .newsletter__personvern{
   text-decoration: underline;
+}
+
+footer .meny__newsletter {
+  background-color: #171717;
 }
 
 
@@ -707,6 +715,31 @@ p{
   transition: 0.4s;
 }
 
+footer .newsletter__btn {
+  z-index: 3;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  min-width: 30%;
+  max-width: 30%;
+  position: relative;
+  background-color: #12132B;
+  border: 1px solid #B0B0B0;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.newsletter__btn:hover .morepodkasts__img{
+  margin-right: 20px;
+  transition: 0.4s;
+}
+
+.newsletter__btn:hover{
+  background-color: #253049;
+  border: 1px solid #7CFBFF;
+  transition: 0.4s;
+}
+
+
 
 @media only screen and (max-width: 380px) {
   .meny__newsletter{
@@ -717,6 +750,11 @@ p{
 .newsletter__btn {
   min-width: 100%;
   max-width: 100%;
+}
+
+footer .newsletter__btn {
+  min-width: 60%;
+  max-width: 60%;
 }
 }
 
@@ -765,6 +803,13 @@ p{
   transition: 1s;
 }
 
+.about__ingress__hr{
+  width: 30%;
+  border: 2px solid #FF5FAF;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+
 .ingress__hr:hover{
   width: 10%;
   transition: 1s;
@@ -776,6 +821,16 @@ p{
   text-align: center;
   width: 40%;
   left: 30%;
+  right: 30%;
+
+}
+
+.about__ingress{
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  left: 20%;
   right: 30%;
 
 }
@@ -793,6 +848,13 @@ p{
     margin-top: 0%;
   }
 
+  .about__ingress__hr{
+    width: 60%;
+    border: 2px solid #FF5FAF;
+    margin-bottom: 10px;
+    transition: 1s;
+  }
+
   .ingress{
     width: 90%;
     left: 0%;
@@ -801,6 +863,18 @@ p{
     z-index: 3;
     position: relative;
   }  
+
+  
+.about__ingress{
+  width: 90%;
+  left: 0%;
+  right: 0%; 
+  background-color: #000;
+  z-index: 3;
+  position: relative;
+
+}
+
 
   .ingress h1{
     text-align: left;
@@ -1227,7 +1301,7 @@ p{
     transition: 0.2s;
     border: 1px solid transparent;
     position: relative;
-    /*display: inline-flex;*/
+    display: inline-flex;
   }
   
   .cards__img{
@@ -1668,19 +1742,25 @@ margin-top: 10px;
     overflow: hidden;
   }
 
+  .blog__main-page .blog__card__text{
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+  }
+
 }
   
 
 
 /* blog_forside.html */
 
-.blog__main-page .RelNyheter{
+/*.blog__main-page .RelNyheter{
   background-color: #FFF1F1; 
   max-width: 100%;
-  /*height: 15%;*/
+height: 15%;
   margin: 100px 0 70px 0;
 
-}
+}*/
 
 .blog__main-page .nythetContainer{
 margin-bottom: 50px;
@@ -1697,9 +1777,9 @@ margin-top: 10px;
   
 }
 
-.blog__main-page .RelNyheter h2{
+/*.blog__main-page .RelNyheter h2{
   margin-top: 30px;
-  }
+  }*/
   
 .blog__main-page .nythetContainer p{
   margin-bottom: 50px;
@@ -1759,6 +1839,11 @@ footer .content__meny li{
   footer .content__meny{
     display: none; 
   }
+
+  .blog__main-page .nythetContainer p{
+    margin-bottom: 0px;
+  }
+  
   
 }
 
