@@ -12,7 +12,6 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
-  /*background-color: #01011A;*/
 }
 
 @media only screen and (max-width: 380px) {
@@ -216,7 +215,6 @@ h2{
   font-weight: 700; 
   font-style: normal;
   color: #B0B0B0;
-  /*color: #FF5FAF;*/
   margin-bottom: 0;
 }
 
@@ -310,7 +308,7 @@ p{
   font-size: 18px;
   font-weight: 400;
   display: inline-block;
-    color: #B0B0B0;
+    color: white;
     text-decoration: none;
 }
 
@@ -330,7 +328,6 @@ p{
 
 
 .logo{
-    /*margin-top: 20px;*/
     float: left;
     z-index: 3;
     transition: 0.5s;
@@ -381,7 +378,6 @@ p{
 }
 
 .logo{
-  /*margin-top: 20px;*/
   margin-left: 15px;
 }
 .meny{
@@ -1017,10 +1013,6 @@ footer .newsletter__btn {
   border: 1px solid #7CFBFF;
   transition: 0.4s;
 }
-
-/*.index__infograpgh__wrapper{
-
-}*/
 
 .index__infograpgh__wrapper hr{
   width: 100%;
